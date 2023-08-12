@@ -1,0 +1,21 @@
+{
+    "name": "My Cf journey",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "browser_action": {
+        "default_popup": "cf.html",
+        "default_icon": "icon.png"
+    },
+    "icon": {
+        "128": "icon.png",
+        "64": "logo-2.jpg",
+        "32": "icon.png"
+    },
+    "content_scripts": [{
+        "js": ["content.js"],
+        "matches": ["https://codeforces.com/submissions/*"]
+    }],
+  
+    
+    "permissions": ["activeTab"]
+}
